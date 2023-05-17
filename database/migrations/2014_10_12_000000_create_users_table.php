@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+
 
 return new class extends Migration
 {
@@ -24,7 +24,11 @@ return new class extends Migration
             $table->boolean('defaultAdmin')->default(0);;
            
         });
+
+        
     }
+
+    
 
     /**
      * Reverse the migrations.
